@@ -342,21 +342,27 @@ h6{
        padding: 0;
 
     }
+    .list{
+        display: flex;
+        position: relative;
+        top: 0;
+        margin: 0;
+        padding: 0;
+    }
     .left{
-        width: 90%;
+        width: 100%;
         padding-left: 4em;
-        
     }
     .right {
+        display: flex;
         background-image: url(images/bg-intro-desktop.svg);
-        width: 70%;
-        height: 90vh;
-        background-position:left;
+        width: 100%;
+        right: 0;
         background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         position: relative;
-        width: 90%;
         z-index: -10;
-        display: block;
     }
     .color1{
         fill: #fff;
@@ -370,14 +376,21 @@ h6{
         fill: red;
     }
     .right img{
+        position: relative;
         width: 100%;
+        height: 120vh;
         margin-top: -3em;
+        background-position: center;
+        background-repeat: no-repeat;
         z-index: 999;
+        background-position: end;
     }
     .main__head h2{
-        width: 60%;
+        width: 70%;
         font-size: 2.5rem;
         text-align: start;
+        margin: 0;
+        margin-bottom: .5em;
         font-weight: 400;
     }
     .left p{
